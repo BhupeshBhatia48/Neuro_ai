@@ -1,0 +1,62 @@
+# ── Core Data Processing ──────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0          # Excel support
+
+# ── Machine Learning ──────────────────────────────────────────────────────────
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+catboost>=1.2.0
+
+# ── Deep Learning ─────────────────────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+tensorflow>=2.13.0        # optional; comment out if not needed
+
+# Transformers — NLP models (BERT, RoBERTa, DistilBERT, GPT-2, etc.)
+transformers>=4.40.0
+datasets>=2.18.0          # HuggingFace datasets hub
+tokenizers>=0.19.0        # fast Rust-backed tokenizers
+accelerate>=0.29.0        # multi-GPU / mixed-precision training
+sentencepiece>=0.2.0      # required by many tokenizers (T5, XLNet, etc.)
+safetensors>=0.4.0        # fast/safe model weight serialisation
+
+# ── AutoML ────────────────────────────────────────────────────────────────────
+flaml>=2.1.0
+pycaret>=3.1.0
+
+# ── Hyperparameter Tuning ─────────────────────────────────────────────────────
+optuna>=3.6.0             # Bayesian / TPE hyperparameter optimisation
+optuna-integration>=3.6.0 # sklearn, XGBoost, LightGBM integrations
+
+# ── Model Storage ─────────────────────────────────────────────────────────────
+joblib>=1.3.0
+pickle5>=0.0.12; python_version < "3.8"   # backport for older Python
+                                           # (built-in pickle used on 3.8+)
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.8.0         # base plotting — confusion matrix, loss curves, etc.
+seaborn>=0.13.0           # statistical plots — feature importance, heatmaps
+
+# ── Web Search & HTTP ─────────────────────────────────────────────────────────
+duckduckgo-search>=5.0.0
+requests>=2.31.0
+aiohttp>=3.9.0
+
+# ── Backend ───────────────────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0.0
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── LLM / NLP ─────────────────────────────────────────────────────────────────
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+loguru>=0.7.0
+rich>=13.0.0              # pretty CLI output
+tqdm>=4.66.0

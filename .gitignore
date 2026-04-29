@@ -1,0 +1,8 @@
+neuro_env/
+venv/
+.env
+.env.*
+logs/
+datasets/
+models/
+__pycache__/

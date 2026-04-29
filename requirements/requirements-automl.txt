@@ -1,0 +1,13 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# requirements-automl.txt
+# AutoML dependencies — FLAML (primary framework, Issue #8)
+# Install: pip install -r requirements/requirements-automl.txt
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Core must be installed first
+-r requirements-core.txt
+
+# ── AutoML ────────────────────────────────────────────────────────────────────
+# Issue #8: FLAML is the single AutoML framework. PyCaret is NOT included.
+flaml>=2.1.0
+flaml[automl]

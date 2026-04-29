@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# requirements-deep.txt
+# Deep learning dependencies — Issue #2 (EXPERIMENTAL)
+# Install: pip install -r requirements/requirements-deep.txt
+#
+# ⚠ WARNING: These are large packages (~2-5 GB with CUDA drivers).
+#             Only install if you intend to use LSTM, GRU, or MLP models.
+#             The core tabular pipeline does NOT require these.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Core must be installed first
+-r requirements-core.txt
+
+# ── PyTorch (CPU) — replace with CUDA build for GPU support ──────────────────
+# For CUDA 12.x: pip install torch --index-url https://download.pytorch.org/whl/cu121
+torch>=2.2.0
+torchvision>=0.17.0
+torchaudio>=2.2.0
+
+# ── NLP Transformers (BERT, RoBERTa, DistilBERT) ─────────────────────────────
+transformers>=4.40.0
+datasets>=2.18.0
+tokenizers>=0.19.0
+accelerate>=0.29.0
+sentencepiece>=0.2.0
+safetensors>=0.4.0

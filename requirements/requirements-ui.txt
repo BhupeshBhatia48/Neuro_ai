@@ -1,0 +1,16 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# requirements-ui.txt
+# UI dependencies — Streamlit chatbot + FastAPI server
+# Install: pip install -r requirements/requirements-ui.txt
+# Run UI:  streamlit run ui/streamlit_app.py
+# ─────────────────────────────────────────────────────────────────────────────
+
+-r requirements-core.txt
+
+# ── Streamlit UI ──────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── REST API (optional) ───────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
